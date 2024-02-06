@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+.bpw-header-subtitle{
+font:red;
+color:red;
+}
+
+body{
+background-color: black;
+
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #000;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #130101;
+  font-size: 7em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: #130101;
+  font-size: 7em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #00ff40 ;
+}
+
+.content h2:nth-child(2) {
+  color: #00ff40;
+  animation: animate 4s ease-in-out infinite;
+}
+
+
+
+
+
+ img{
+            position: absolute;
+            top: 80px;
+            height: 225px;
+          }
+
+
+
+
+
+          
+.content1 {
+  position: absolute;
+  right: 22%;
+}
+
+.content1 h2 {
+  color: #130101;
+  font-size: 7em;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  color: #130101;
+  font-size: 7em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+.content1 h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.content1 h2:nth-child(2) {
+  color: #ffffff;
+  animation: animate 4s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+
+@media (max-width: 768px) {
+            .content, .content1 {
+                position: static;
+            }
+
+            .content h2, .content1 h2 {
+                font-size: 3em;
+            }
+
+            .content1 {
+                right: auto;
+               
+            }
+
+           
+
+          }
+
+
+</style>
+
+
+<link rel="stylesheet" href="https://webchat-styler-css.botpress.app/prod/0fbabff8-d6d4-4ac6-b8b9-c1218ead4a7b/v9777/style.css" >
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+<title>AI BOT</title>
+</head>
+<body style="background-image: url('b.gif'); background-repeat: no-repeat; background-position: center;  background-size: cover;" >
+  <img src="bot2.gif" alt="GIF">
+
+<section>
+  <div class="content">
+  
+    <h2>SyllabusSaga</h2>
+    <h2>SyllabusSaga</h2>
+   
+  </div>  
+
+  <div class="content1">
+   <h2>AI</h2>
+   <h2>AI</h2>
+  
+  </div>
+  
+</section>  
+
+
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>  
+
+
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "Ask any Question ?",
+      "botId": "bcea2595-ee6f-4654-8f09-2fc47582fa71",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "bcea2595-ee6f-4654-8f09-2fc47582fa71",
+      "webhookId": "bfa44c02-b9f3-4032-8faa-3454a1300f03",
+      "lazySocket": true,
+      "themeName": "Dark",
+      "frontendVersion": "v1",
+      "showPoweredBy": false,
+      "theme": "Dark",
+      "themeColor": "#2563eb",
+      "stylesheet":"https://webchat-styler-css.botpress.app/prod/0fbabff8-d6d4-4ac6-b8b9-c1218ead4a7b/v9600/style.css",
+      "botName":"Syllabus Saga AI",
+      "avatarUrl":"https://i.pinimg.com/236x/7f/5a/93/7f5a93164763d62faec8fa300dc28b7e.jpg",
+      "showCloseButton":"true"
+  });
+
+
+
+  // https://webchat-styler-css.botpress.app/prod/0fbabff8-d6d4-4ac6-b8b9-c1218ead4a7b/v9971/style.css
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
