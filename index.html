@@ -1,7 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 .bpw-header-subtitle{
 font:red;
@@ -13,7 +17,7 @@ background-color: black;
 
 }
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-  
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +27,7 @@ background-color: black;
 
 body {
   display: flex;
-  background: #000;
+  background: #000000;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -64,9 +68,14 @@ h3 {
 
  img{
             position: absolute;
-            top: 80px;
-            height: 225px;
+            top: 0px;
+      height: auto;
+      width: 20%;
+      display: block;
+      margin: 20px auto;
           }
+
+
 
 
 
@@ -103,22 +112,64 @@ h3 {
 }
 
 
-@media (max-width: 768px) {
-  .content, .content1 {
-    position: static;
-    text-align: center;
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
   }
 
-  .content h2, .content1 h2 {
-    font-size: 3em;
-  }
-
-  img {
-    position: static;
-    height: 100px; /* Adjust the height of the image on smaller screens */
-    margin-top: 20px; /* Adjust the margin of the image on smaller screens */
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+            body {
+                background-image: none; /* Remove background image on small screens */
+            }
+
+            .content{
+                position: static;
+                text-align: start;
+            }
+            .content1 {
+                position: absolute;
+              top: 60%;
+              right: 50%;
+
+                
+            }
+
+            .content h2,
+            .content1 h2 {
+                font-size: 3em;
+            }
+
+            img {
+                width: 100% !important; /* Adjust the width of the image for smaller screens */
+            }
+        }
 </style>
 
 
@@ -177,11 +228,6 @@ h3 {
 
 
   // https://webchat-styler-css.botpress.app/prod/0fbabff8-d6d4-4ac6-b8b9-c1218ead4a7b/v9971/style.css
-
-
-
-
-
 
 </script>
 
