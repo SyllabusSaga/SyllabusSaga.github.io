@@ -13,7 +13,7 @@ background-color: black;
 
 }
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-
+  
 * {
   margin: 0;
   padding: 0;
@@ -156,6 +156,29 @@ h3 {
           }
 
 
+
+      @media (max-width: 768px) {
+      .content, .content1 {
+        position: static;
+      }
+
+      .content h2, .content1 h2 {
+        font-size: 3em;
+      }
+
+      .content1 {
+        right: auto;
+      }
+
+      img {
+        top: 20px; /* Adjust the position of the image on smaller screens */
+        height: 150px; /* Adjust the height of the image on smaller screens */
+      }
+    }
+
+
+  
+
 </style>
 
 
@@ -221,18 +244,6 @@ h3 {
 
 
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
